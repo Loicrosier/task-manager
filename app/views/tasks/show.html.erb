@@ -1,0 +1,15 @@
+<h1>TASK SHOW</h1>
+<div class="index">
+  <p>
+    <%= @task.title %>&nbsp
+    <%= @task.details %> &nbsp
+    <%= @task.completed %>
+  </p>
+  </div>
+<%= link_to 'all tasks', tasks_path %>
+<%= link_to 'modifier', edit_path(@task) %>
+
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
