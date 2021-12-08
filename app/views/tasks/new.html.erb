@@ -1,11 +1,20 @@
 <h1>Nouvelle Tache</h1>
-
+<div class="formulaire">
+<div class="title">
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+  </div>
+  <div class="details">
   <%= f.label :details %>
   <%= f.text_field :details %>
+  </div>
+  <div class="completed">
   <%= f.label :completed %>
   <%= f.text_field :completed %>
+  </div>
   <%= f.submit %>
 <% end %>
+</div>
+
+couleurr sur les text

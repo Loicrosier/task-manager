@@ -1,10 +1,14 @@
 <h1>toutes les taches</h1>
+<style>
+.test {
+  background-color: black;
+}
+</style>
 
 <% @tasks.each do |task| %>
 <div class="test">
 <p><%= link_to "#{task.title}", task_path(task) %>
-<%= link_to "#{task.details}", task_path(task)%>
-<%= link_to "#{task.completed}", task_path(task)%>
+</p>
 </div>
 <% end %>
 
